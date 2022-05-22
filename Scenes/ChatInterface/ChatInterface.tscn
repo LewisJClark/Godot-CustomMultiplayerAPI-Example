@@ -1,0 +1,114 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scenes/ChatInterface/ChatInterface.gd" type="Script" id=1]
+
+[node name="ChatInterface" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="HostButton" type="Button" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 9.0
+margin_top = 11.0
+margin_right = -965.0
+margin_bottom = -569.0
+text = "Host"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ConnectButton" type="Button" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 64.0
+margin_top = 11.0
+margin_right = -896.0
+margin_bottom = -569.0
+text = "Connect"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="IpEdit" type="LineEdit" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 157.0
+margin_top = 9.0
+margin_right = -399.0
+margin_bottom = -567.0
+placeholder_text = "Enter IP of the Host you want to connect to."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="IpLabel" type="Label" parent="IpEdit"]
+margin_left = -21.0
+margin_top = 4.0
+margin_right = 19.0
+margin_bottom = 18.0
+text = "IP:"
+
+[node name="NameEdit" type="LineEdit" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 676.0
+margin_top = 9.0
+margin_right = -17.0
+margin_bottom = -567.0
+placeholder_text = "Enter the Name to use in the chatroom."
+
+[node name="NameLabel" type="Label" parent="NameEdit"]
+margin_left = -46.0
+margin_top = 5.0
+margin_right = -4.0
+margin_bottom = 19.0
+text = "Name:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ChatLog" type="ItemList" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 12.0
+margin_top = 43.0
+margin_right = -17.0
+margin_bottom = -39.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MessageEdit" type="LineEdit" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 13.0
+margin_top = 567.0
+margin_right = -74.0
+margin_bottom = -9.0
+editable = false
+placeholder_text = "Type your message here."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SendButton" type="Button" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 955.0
+margin_top = 568.0
+margin_right = -18.0
+margin_bottom = -12.0
+disabled = true
+text = "Send"
+__meta__ = {
+"_edit_use_anchors_": false
+}
